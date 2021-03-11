@@ -14,6 +14,7 @@
 		7858280A25FA6CCC001EFCBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7858280925FA6CCC001EFCBD /* main.m */; };
 		7858281425FA6CCC001EFCBD /* btriliTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7858281325FA6CCC001EFCBD /* btriliTests.m */; };
 		7858281F25FA6CCC001EFCBD /* btriliUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7858281E25FA6CCC001EFCBD /* btriliUITests.m */; };
+		E9CB2B9145B8932F3CAC5D48 /* libPods-btrili.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F17EFF0FA99C2D95DA1A68 /* libPods-btrili.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10370FE42DA7E7C61970B42A /* Pods-btrili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btrili.debug.xcconfig"; path = "Target Support Files/Pods-btrili/Pods-btrili.debug.xcconfig"; sourceTree = "<group>"; };
 		785827F425FA6CCB001EFCBD /* btrili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = btrili.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		785827F725FA6CCB001EFCBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		785827F825FA6CCB001EFCBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		7858281A25FA6CCC001EFCBD /* btriliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = btriliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7858281E25FA6CCC001EFCBD /* btriliUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = btriliUITests.m; sourceTree = "<group>"; };
 		7858282025FA6CCC001EFCBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C798EE9EC0F14038F15FF33 /* Pods-btrili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btrili.release.xcconfig"; path = "Target Support Files/Pods-btrili/Pods-btrili.release.xcconfig"; sourceTree = "<group>"; };
+		B8F17EFF0FA99C2D95DA1A68 /* libPods-btrili.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-btrili.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9CB2B9145B8932F3CAC5D48 /* libPods-btrili.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C647ED6842FCB6A46C62AD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8F17EFF0FA99C2D95DA1A68 /* libPods-btrili.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		785827EB25FA6CCB001EFCBD = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,8 @@
 				7858281225FA6CCC001EFCBD /* btriliTests */,
 				7858281D25FA6CCC001EFCBD /* btriliUITests */,
 				785827F525FA6CCB001EFCBD /* Products */,
+				DA8B9DE02229477045CDDA58 /* Pods */,
+				2C647ED6842FCB6A46C62AD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +144,16 @@
 			path = btriliUITests;
 			sourceTree = "<group>";
 		};
+		DA8B9DE02229477045CDDA58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10370FE42DA7E7C61970B42A /* Pods-btrili.debug.xcconfig */,
+				7C798EE9EC0F14038F15FF33 /* Pods-btrili.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,6 +161,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7858282325FA6CCD001EFCBD /* Build configuration list for PBXNativeTarget "btrili" */;
 			buildPhases = (
+				5FABAA71124B3766D7ABA411 /* [CP] Check Pods Manifest.lock */,
 				785827F025FA6CCB001EFCBD /* Sources */,
 				785827F125FA6CCB001EFCBD /* Frameworks */,
 				785827F225FA6CCB001EFCBD /* Resources */,
@@ -251,6 +277,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FABAA71124B3766D7ABA411 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-btrili-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		785827F025FA6CCB001EFCBD /* Sources */ = {
@@ -420,6 +471,7 @@
 		};
 		7858282425FA6CCD001EFCBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10370FE42DA7E7C61970B42A /* Pods-btrili.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -438,6 +490,7 @@
 		};
 		7858282525FA6CCD001EFCBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C798EE9EC0F14038F15FF33 /* Pods-btrili.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
